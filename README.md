@@ -1,14 +1,15 @@
 ### Introuduction
-**simple-bash** is a customizable prompt nice looking prompt installer for bash.
+**simple-bash** is a list of customizable and nice looking prompts configuration with integrated git for bash shell.
 The interactive shell based setup which can install or uninstall bash configuration with ease.
-It includes pre-configured list of simple bash prompt configurations with added support for git. Provided bash configuration are very simple and beginner friendly. One can create their own configuration based on these examples more creatively.
+It includes pre-configured list of simple bash prompt configurations with added support for git. Configuration scripts are very simple and beginner friendly. One can create their own configuration based on these examples more creatively.
 
 #### Features
-1. **Integrated Git: ** The example configuration files in the themes folder have configured to utilize git command and show git branch and status right in the terminal prompt.
+1. **Integrated Git: ** The example configuration files in the `themes/` folder have configured to utilize git command and show git branch and status right in the terminal prompt.
 2. **Workspace Type Detection: ** displays icon in the prompt based on your workspace. e.g, if you working with cmake, it will be shown in the bash prompt.
-3. **Easy Customization: ** Based on provided bashrc configuration it's easy to make new configuration.
-4. **Easy Installation: ** It's very easy to install the bash configuration with help of `setup.sh`. Not only that! if any bash configuration is kept in the `themes/` directory with `.bashrc` format, `setup.sh` will detect and give option to install that configuration too.
-5. **Easy Removal: ** If you have any previous installation of through `setup.sh` running it again will give an option to remove previous installation.
+3. **Easy Customization: ** The bash configuration scripts are very easy to customize or even make new one based on these.
+4. **Easy Installation: ** It's very easy to install the bash configuration with help of `./setup.sh`. Not only that! if any bash configuration is kept in the `themes/` directory with `.bashrc` format, `setup.sh` will detect and give option to install that configuration too.
+5. **Easy Removal: ** If you have any previous installation of through `./setup.sh` running it again will give an option to remove previous installation.
+6. **Other Uses:** Suppose you need different bash configuration (alias, $PATH variables, custom commands) for different kinds of work, then just make seperate configuraion for your different work requirement and keep them in `themes/` directory. Switch your bash configuration with eash with help of the `./setup.sh/` script.
 
 #### Demonstration
 Here's a simple demonstration of `multiline.bashrc` themed configuration.
@@ -43,12 +44,18 @@ source ~/.bashrc
 
 
 ### Configuration
-If you want to customize the configuration or appearance, edit the theme file directly in `themes` directory and run the `setup.sh` again to reinstall.
+If you want to customize the configuration or appearance, edit the theme file directly in `themes` directory and run the `./setup.sh` again to reinstall.
 For most of the cases, instead of modifying existing theme configuration file simply copy or create new file just make sure to add `.bashrc` extension to your configuration file.
-`setup.sh` will account for all changes and new files in the `themes` directory. So, simply run it again to re/un/install.
+`./setup.sh` will account for all changes and new files in the `themes` directory. So, simply run it again to re/un/install.
+Here are some links which will help you to customize or make you own configuration file:
+[How to customize your bash prompt?](https://www.howtogeek.com/307701/how-to-customize-and-colorize-your-bash-prompt/)
+[Learn bash shell programming or scropting.](https://www.learnshell.org/)
+[How to install NERD font?](https://wordscr.com/how-to-install-nerd-fonts/)
+[Where to get CheatSheet of nerd font?](https://www.nerdfonts.com/cheat-sheet)
+
 
 
 ### Uninstalling
-If you have any previous installation using `setup.sh` simply run it again and enter x to remove when asked.
+If you have any previous installation using `./setup.sh` simply run it again and enter x to remove when asked.
 If you have deleted copy of this repo you have to clone it again to use the setup script.
 ~~**Alternatively, if you have installed configuration files manually, then you know how to remove.**~~
